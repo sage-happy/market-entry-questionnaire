@@ -1,0 +1,132 @@
+<!--SUBMITTED BY HAPPY MATEKENYA BECE/18/SS/017 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Clearance form for MUBAS students.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Questionnaire</title>
+</head>
+<body>
+    
+    <div class="form-container">
+        <h1>Electronic Products Qestionnaire</h1>
+        <form onsubmit="return checkForm()" method="post">
+            <div id="Personal">
+                <div class="sideToside">
+                    <div class="inputgroup">
+                        <label for="name">Full name:</label>
+                        <input type="text" name="name" id="name" class="input">
+                    </div>
+    
+                    <div class="inputgroup">
+                        <label for="Age">Age:</label>
+                        <input type="number" min="15" name="Age" id="age" class="input">
+                    </div>
+                </div>
+
+                <div class="sideToside">
+                    <div class="inputgroup">
+                        <label for="Cellphone">Cellphone:</label>
+                        <input type="tel" name="phone" id="phone" class="input">
+                    </div>
+                    
+                    <div class="inputgroup">
+                        <label for="gender">Gender:</label>
+                        <span>
+                            <input type="radio" name="gender" value="M" id="male" class="input"> Male
+                            <input type="radio" name="gender" value="F" id="female" class="input"> Female
+                        </span>
+                        
+                    </div>
+                </div>
+                
+                <div class="details">
+                    <label for="Email">Email:</label>
+                    <input type="email" name="email" id="email" class="input">
+                </div>
+
+                <div class="details">
+                    <label for="Program of study">Program of study:</label>
+                    <input type="text" name="programOfStudy" id="programofstudy" class="input">
+                </div>
+
+                <div class="details">
+                    <label for="Year of study">Year of study:</label>
+                    <input type="number" min="1" max="5" name="yearOfStudy" id="yearofstudy" class="input">
+                </div>
+            </div>
+            <!--END OF PERSONAL DETAILS-->
+
+            <!--Questions section-->
+            <div class="questions">
+                <ol>
+                    <li>
+                        
+                        <div>    
+                            <p>What electronic device do you like using most?</p>
+                            <div class="devices">
+                                <label for="devices"><input type="checkbox" name="smartphone" id="smartphone" onchange="toggle2()">Smartphone</label>   
+                            </div>
+                            <div class="devices">
+                                <label for="devices"><input type="checkbox" name="laptop" id="laptop" onchange="toggle1()">Laptop</label>   
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>    
+                            <p>What brand of the electronic device do you like using?</p>
+                       <div id="choices-container">
+                          <div class="choices">
+                                <label for="brand"><input type="checkbox" name="samsung" id="samsung" value="1">Samsung</label>   
+                            </div>
+                            <div class="choices">
+                                <label for="brand"><input type="checkbox" name="iphone" id="iphone" value="2">IPhone</label>   
+                            </div>
+                            <div class="choices">
+                                <label for="brand"><input type="checkbox" name="itel"  id="itel" value="3">Itel</label>   
+                            </div>
+                            <div class="choices">
+                                <label for="brand"><input type="checkbox" name="tecno"  id="tecno" value="4">Tecno</label>   
+                            </div> 
+                       </div>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <p>Why this brand?</p>
+                        <textarea name="device_name" id="" cols="55" rows="5"></textarea>
+                    </li>
+                    <li>
+                        <p>For how long have you used such a brand? In years</p>
+                        <input type="number" min="1" name="time_frame" id="time" class="input">
+                    </li>
+                    <li>
+                        <p>How did you know about this brand?</p>
+                        <textarea name="origin" id="origin" cols="55" rows="5"></textarea>
+                    </li>
+                    <li>
+                        <p>How much did you pay for this brand?</p>
+                        <input type="number" name="price" id="price" class="input">
+                    </li>
+                    <li>
+                        <p>Please provide date if possible.</p>
+                        <input type="date" name="date" id="date" class="input">
+                    </li>
+                </ol>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <section>
+        <footer style="color:aliceblue; margin-top:50px;">
+            <script src="js/footer.js"></script>
+        </footer>
+    </section>
+    <script src="js/checkForm.js"></script>
+    <script src="js/PCbrands.js"></script>
+    <script src="js/PCbrand2.js"></script>
+</body>
+</html>

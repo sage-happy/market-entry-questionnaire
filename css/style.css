@@ -1,0 +1,131 @@
+body, html{
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../img/background.jpg');
+    z-index: -999;
+    position: relative;
+    background-position:bottom;
+    
+  }
+.form-container{
+    width: 600px;
+    height: 1210px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border: dotted 5px rgb(40, 164, 236);
+    margin: 30px auto 30px auto;
+    background-color: white;
+    z-index: 999;
+}
+form{
+    width: 500px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(10%);
+}
+.inputgroup{
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto 15px auto;
+}
+.details{
+    display:flex;
+    width: 426px;
+    flex-direction: column;
+    margin: 0 auto 15px auto;
+}
+.sideToside{
+    display:flex;
+    flex-direction: row;
+    margin: 0 auto 15px auto;
+}
+.input{
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    height: 20px;
+    /* border-color: rgb(40, 164, 236); */
+}
+.input:hover{
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-color: rgb(40, 164, 236);
+    /* border-color: rgb(40, 164, 236); */
+}
+.input:focus{
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    outline:none;
+    /* border-color: rgb(40, 164, 236); */
+}
+h1{
+    display:flex;
+    flex-direction: row;
+    justify-content:center; 
+}
+
+li input{
+    width: 448px;
+}
+button{
+    margin-top: 15px;
+    width: 93px;
+    height: 40px;
+    background-color: rgb(40, 164, 236);
+    border-width: 1px;
+    display:flex;
+    flex-direction: row;
+    align-self: center;
+    color: rgb(255, 255, 255);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.message{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(0, 110%);
+}
+.message h1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+}
+a{
+    display:flex;
+    flex-direction: column;
+    align-content: flex-end;
+    text-decoration: none;
+}
+#female{
+    margin-left:33px;
+    width: 20px;
+}
+#male{
+    width: 20px;
+}
+input#time{
+    width:411px;
+}
+input#price{
+    width:411px;
+}
+input[type="checkbox"]{
+    width: 20px;
+    float: left;
+}
+.devices{
+    display: inline-block;
+}
+.choices{
+    display: inline-block;
+}
